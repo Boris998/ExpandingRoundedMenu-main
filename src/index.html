@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Expanding Rounded Menu | Codrops</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/lon4huw.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+  </head>
+  <body class="demo-1">
+    <main>
+      <div class="frame">
+        <h1 class="frame__title">
+          Work with me <em>(Click and download my CV)</em>
+        </h1>
+        <nav class="frame__links">
+          <a
+            href="#"
+            class="hover-line"
+            href="http://tympanus.net/Tutorials/RisographGrainShader/"
+            >CV</a
+          >
+        </nav>
+      </div>
+      <div class="content">
+        <div
+          class="content__img content__img--left"
+          style="background-image: url(img/img1.jpg)"
+        ></div>
+        <h3 class="content__title content__title--left">CSE</h3>
+        <div
+          class="content__img content__img--main"
+          style="background-image: url(img/img2.jpg)"
+        ></div>
+        <h2 class="content__title content__title--main">
+          <span>M</span>
+          <span>I</span>
+          <span>H</span>
+          <span>A</span>
+        </h2>
+        <p class="content__description">
+          “When you realize nothing is lacking, the whole world belongs to you.”
+        </p>
+        <div
+          class="content__img content__img--right"
+          style="background-image: url(img/img3.jpg)"
+        ></div>
+        <h3 class="content__title content__title--right">ART</h3>
+      </div>
+      <div class="cover-wrap" aria-hidden="true">
+        <div class="cover">
+          <div
+            class="cover__inner"
+            style="background-image: url(img/cover.jpg)"
+          ></div>
+        </div>
+      </div>
+      <div class="menu">
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <nav class="menu__nav-top">
+          <a
+            href="https://www.youtube.com/watch?v=TbSm6HsX_ek&list=RDMMGllEDACUbNo&index=14"
+            class="line-link"
+            >Biography</a
+          >
+          <a href="#" class="line-link">Career & Goals</a>
+          <a href="#" class="line-link">Mission & Vison</a>
+          <a href="#" class="line-link">Projects</a>
+          <a href="#" class="line-link">Music</a>
+          <a href="#" class="line-link">Dance</a>
+          <a href="#" class="line-link">Recommendations</a>
+        </nav>
+        <a href="" class="lang">
+			<img src="img/mkd.png" alt="logo" class="logo" />
+		</a>
+      </div>
+    </main>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
